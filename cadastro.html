@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" type="imagex/png" href="logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="swidth=device-width, initial-scale=1.0">
+    <title>Yahe company - cadastro</title>
+    <style>
+        @font-face { 
+    font-family: minhaFonte;
+    src: url(SoDoSans-Regular.ttf);
+}
+    </style>
+</head>
+<body >
+
+
+<nav style="text-align: left; background-color: white; color: black; vertical-align: middle;">
+    <div class="div4" style="width: 100px;">
+    <img src="yahe2.png" width="100px" height="100px" > </div>
+    <div class="div4">
+        <br><br>
+    <a href="index.html">HOME</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="produtos.html">PRODUTOS</a>
+    <a href="carrinho.html">CARRINHO</a>
+    <a href="cadastro.html">CADASTRO</a>
+</div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container" id="authContainer">
+    <h2>Cadastro de Usuário</h2>
+    <form id="registerForm">
+        <div class="form-group">
+            <label for="firstName">Nome:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="container" id="profileContainer" style="display:none;">
+    <h2>Perfil de Usuário</h2>
+    <p id="profileName"></p>
+    <p id="profileEmail"></p>
+    <button id="logoutButton">Log out</button>
+</div>
+
+<br>
+
+<script src="cadastro.js"></script>
+
+<nav style="background-color: #fbe2e2;">
+    <a href="index.html">Voltar para a página principal</a>
+</nav>
+
+<nav style="color: white;">
+    &copy;2024 Yahe - Todos os direitos reservados. <br>
+
+    <hr width="100%" style="color: #555;" size="1">
+<br>
+    Nosso contato: ajuda-yahe@yahe.com.br | Telefone: (14)99448-2940 
+
+
+<section id="contact">
+    <h2 style="text-align: left;">Mande uma sugestão:</h2>
+    <form style="text-align: left;">
+
+        <label for="email"></label>Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="subject">Sugestão:</label>
+        <input type="subject" id="subejct" name="subejct"> <br> 
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</nav> 
+</body>
+</html>

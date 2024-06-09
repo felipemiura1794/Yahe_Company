@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="swidth=device-width, initial-scale=1.0">
+    <title>Yahe company - home</title>
+    <link rel="shortcut icon" type="imagex/png" href="logo.ico">
+    <style>
+        @font-face { 
+    font-family: minhaFonte;
+    src: url(SoDoSans-Regular.ttf);
+}
+    </style>
+</head>
+<body>
+<nav style="text-align: left; background-color: white; color: black;">
+    <div class="div4" style="width: 100px;">
+    <img src="yahe2.png" width="100px" height="100px" > </div>
+    <div class="div4">
+        <br><br>
+    <a href="index.html">HOME</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="produtos.html">PRODUTOS</a>
+    <a href="carrinho.html">CARRINHO</a>
+    <a href="cadastro.html">CADASTRO</a>
+</div>
+</nav>
+
+<img src="Título.png" width="100%">
+
+<br><br><br>
+<section>
+<div class="div1">
+    <img src="img1.png" width="720px" height="420px">
+    </div>
+
+<div class="div2" style="text-align: center; font-size: 20px">
+    <br><br><br><br><br><br><br>
+        Venha conhecer nossos mais novos sabores de donuts<br>
+        <p>Clique abaixo para ver nossos produtos</p><br>
+<button class="button2"; onclick="irParaProdutos()"><strong>Saiba mais</strong> </button>
+</div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<section>
+<div class="div1"  style="text-align: center; font-size: 20px">
+    <br><br><br><br><br><br><br>
+    Venha conhecer mais sobre da nossa empresa<br>
+    <p>Clique para saber mais a baixo</p><br>
+    <button class="button2"; onclick="irParaSobre()"><strong>Saiba mais</strong> </button>
+    </div>
+
+<div class="div2">
+    <img src="pessoas.png.png" width="720px" height="420px">
+</div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section>
+    <div class="div1">
+        <img src="cadastro.png" width="720px" height="420px">
+        </div>
+    
+    <div class="div2" style="text-align: center; font-size: 20px">
+        <br><br><br><br><br><br><br>
+        Cadastre-se para receber mais notícias sobre a nossa empresa<br>
+        <p>Clique para se cadastrar a baixo</p><br>
+        <button class="button2"; onclick="irParaCadastro()"><strong>Saiba mais</strong> </button>
+    </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<nav style="background-color: #fbe2e2;">
+    <a href="index.html" style="color: #56013e;">Voltar para a página principal</a>
+</nav>
+
+<nav style="color: rgb(255, 255, 255);">
+    &copy;2024 Yahe - Todos os direitos reservados. <br>
+<a href="https://www.instagram.com/yahe758/">
+    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30px" height="30px" ></a>
+
+    <hr width="100%" style="color: #000000;" size="1">
+<br>
+    Nosso contato: ajuda-yahe@yahe.com.br | Telefone: (14)99448-2940 
+
+
+<section id="contact">
+    <h2 style="text-align: left;">Mande uma sugestão:</h2>
+    <form style="text-align: left;">
+
+        <label for="email"></label>Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="subject">Sugestão:</label><br>
+        <input type="subject" id="subejct" name="subejct"> <br> 
+        <button type="submit"><strong>Enviar</button>
+    </form>
+</section>
+
+</nav> 
+<script>
+    function irParaProdutos() {
+        window.location.href = 'produtos.html';
+    }
+    function irParaSobre() {
+        window.location.href = 'sobre.html';
+    }
+    function irParaCadastro() {
+        window.location.href = 'cadastro.html';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahe Company - Carrinho</title>
+    <link rel="shortcut icon" type="imagex/png" href="logo.ico">
+    <link rel="stylesheet" href="car.css">
+    <style>
+        @font-face { 
+            font-family: minhaFonte;
+            src: url(SoDoSans-Regular.ttf);
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="text-align: left; background-color: white; color: black;">
+        <div class="div4" style="width: 100px;">
+            <img src="yahe2.png" width="100px" height="100px">
+        </div>
+        <div class="div4">
+            <br><br>
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="produtos.html">PRODUTOS</a>
+            <a href="carrinho.html">CARRINHO</a>
+            <a href="cadastro.html">CADASTRO</a>
+        </div>
+    </nav>
+    <br><br><br><br>
+
+    <section style="padding: 20px;">
+        <h1 style="text-align: center;">Carrinho de Compras</h1>
+        <div class="products">
+
+            <div class="product" data-id="1" data-name="Donut de Chocolate" data-price="5,00">
+                <img src="d1.png" alt="Donut de chocolate">
+                <h2>Donut de Chocolate</h2>
+                <p>Preço: R$ 5,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-id="2" data-name="Donut de Morango" data-price="4,75">
+                <img src="d2.png" alt="Produto 2">
+                <h2>Donut de Morango</h2>
+                <p>Preço: R$ 4,75</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-id="3" data-name="Donut de Baunilha" data-price="4,50">
+                <img src="d3.png" alt="Produto 3">
+                <h2>Donut de Baunilha</h2>
+                <p>Preço: R$ 4,50</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="4" data-name="Donut de Caramelo" data-price="5,25">
+                <img src="d4.png" alt="Produto 4">
+                <h2>Donut de Caramelo</h2>
+                <p>Preço: R$ 5,25</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-id="5" data-name="Brigadeiro Tradicional" data-price="2,00">
+                <img src="b1.png" alt="Produto 5">
+                <h2>Brigadeiro Tradicional</h2>
+                <p>Preço: R$ 2,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="6" data-name="Brigadeiro de Leite Ninho" data-price="2,50">
+                <img src="b2.png" alt="Produto 5">
+                <h2>Brigadeiro de Leite Ninho</h2>
+                <p>Preço: R$ 2,50</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="7" data-name="Brigadeiro de Coco" data-price="2,25">
+                <img src="b3.png" alt="Produto 5">
+                <h2>Brigadeiro de Coco</h2>
+                <p>Preço: R$ 2,25</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="8" data-name="Brigadeiro de Amendoim" data-price="2,75">
+                <img src="b4.png" alt="Produto 5">
+                <h2>Brigadeiro de Amendoim</h2>
+                <p>Preço: R$ 2,75</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="9" data-name="Churros Tradicional" data-price="3,00">
+                <img src="c1.png" alt="Produto 5">
+                <h2>Churros Tradicional</h2>
+                <p>Preço: R$ 3,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="10" data-name="Churros de Chocolate" data-price="3,50">
+                <img src="c2.png" alt="Produto 5">
+                <h2>Churros de Chocolate</h2>
+                <p>Preço: R$ 3,50</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="11" data-name="Churros de Nutella" data-price="4,00">
+                <img src="c3.png" alt="Produto 5">
+                <h2>Churros de Nutella</h2>
+                <p>Preço: R$ 4,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product" data-id="12" data-name="Mini Churros" data-price="2,50">
+                <img src="c4.png" alt="Produto 5">
+                <h2>Mini Churros</h2>
+                <p>Preço: R$ 2,50</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+        </div>
+        <h2>Carrinho</h2>
+        <div class="cart">
+            <ul class="cart-items"></ul>
+            <p>Total: R$ <span class="total-price">0.00</span></p>
+            <button class="checkout">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <nav style="background-color: #fbe2e2;">
+        <a href="index.html">Voltar para a página principal</a>
+    </nav>
+
+    <nav style="color: white;">
+        &copy;2024 Yahe - Todos os direitos reservados. <br>
+        <a href="https://www.instagram.com/yahe758/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30px" height="30px"></a>
+        <hr width="100%" style="color: #56013e;" size="1">
+        <br>
+        Nosso contato: ajuda-yahe@yahe.com.br | Telefone: (14)99448-2940
+    </nav>
+<nav style="color: white;">
+    <section id="contact">
+        <h2 style="text-align: left;">Mande uma sugestão:</h2>
+        <form style="text-align: left;">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="subject">Sugestão:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</nav>
+    <script src="scripts.js"></script>
+</body>
+</html>
